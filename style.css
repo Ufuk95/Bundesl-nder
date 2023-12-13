@@ -1,0 +1,74 @@
+html{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+body{
+    width: 1024px;
+    margin: 5px;
+    font-family: 'Voces', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: lightgrey;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.bbox{
+    display: block;
+    text-decoration: none;
+    border: 5px solid rgb(134, 134, 134);
+    color: black;
+    padding: 10px;
+    width: calc(33% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+}
+.bbox:hover{
+    border: 5px solid rgb(88, 88, 88);
+}
+
+.text-grey{
+    color: lightgrey;
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#letter-box{
+    display: flex;
+    gap: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.letter{
+    background-color: lightgrey;
+    color: black;
+    width: 30px;
+    height: 30px;
+}
+.letter:hover{
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .bbox{
+        width: calc(50% - 10px);
+    }
+}
+@media (max-width: 500px){
+    .bbox{
+        width: calc(100% - 10px);
+    }
+}
